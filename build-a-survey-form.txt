@@ -1,0 +1,162 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+  <link re="stylesheet" href="styles.css">
+  <body><h1 id="title">Mike Oniciuc Survey Form</h1>
+  <p id="description">thank you for helping me improve my platform</p>
+  <form id="survey-form">
+    <fieldset>
+    <label id="name-label">Your Name: <input id="name" type="text" required placeholder="First_LastName" /></label>
+    <label id="email-label">Email Address: <input id="email" type="email" required placeholder="Email" /></label>
+    <label id="number-label">Your Age: <input id="number" type="number" min="10" max="120" placeholder="Age"/> </label></fieldset>
+    <fieldset>
+      <legend>What's your work experience?</legend>
+    <label for="dropdown">
+      <select name="dropdown" id="dropdown">
+      <option value="no-exp">No Experience</option>
+  <option value="entry-level">1-2 years</option>
+  <option value="mid-level">2-5 years</option>
+  <option value="senior-level">+5 years</option>
+      </select>
+      </label></fieldset>
+      <fieldset>
+ <fieldset>
+  <legend> Select one of the options </legend>
+  <label for="age-check-1">
+    <input type="radio" name="age-check" id="age-check-1" value="18+" />I am OVER 18
+  </label>
+  <label for="age-check-2">
+    <input type="radio" name="age-check" id="age-check-2" value="18-" />I am UNDER 18
+  </label>
+</fieldset>
+
+<fieldset>
+  <legend>Are you a friend of Mike Oniciuc?</legend>
+  <label for="friend-yes">
+    <input type="checkbox" name="yfriend" id="friend-yes" value="yes" />YES
+  </label>
+  <label for="friend-no">
+    <input type="checkbox" name="nfriend" id="friend-no" value="no" />NO, but I would love to!
+  </label>
+</fieldset>
+
+    <textarea value="comments" placeholder="Share your thoughts with us..."></textarea>
+   <input id="submit" type="submit" value="submit" />
+  </form>
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+/* Reset default styles for better consistency */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Basic styling for the body and container */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #e74c3c, #c0392b);
+  color: #fff;
+  margin: 20px;
+  padding: 10px;
+}
+
+#title {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#description {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Styling for the form and fieldsets */
+#survey-form {
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+fieldset {
+  margin-bottom: 20px;
+  border: 1px solid #555;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+legend {
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Styling for labels and input elements */
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #666;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* Styling for the radio and checkbox inputs */
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+/* Styling for the submit button */
+input[type="submit"] {
+  display: block;
+  width: auto;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #e74c3c;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+  background-color: #f9f9f9;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  #survey-form {
+    width: 100%;
+  }
+}
+
+
+** end of undefined **
+

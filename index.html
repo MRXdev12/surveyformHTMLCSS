@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+  <link re="stylesheet" href="styles.css">
+  <body><h1 id="title">Mike Oniciuc Survey Form</h1>
+  <p id="description">thank you for helping me improve my platform</p>
+  <form id="survey-form">
+    <fieldset>
+    <label id="name-label">Your Name: <input id="name" type="text" required placeholder="First_LastName" /></label>
+    <label id="email-label">Email Address: <input id="email" type="email" required placeholder="Email" /></label>
+    <label id="number-label">Your Age: <input id="number" type="number" min="10" max="120" placeholder="Age"/> </label></fieldset>
+    <fieldset>
+      <legend>What's your work experience?</legend>
+    <label for="dropdown">
+      <select name="dropdown" id="dropdown">
+      <option value="no-exp">No Experience</option>
+  <option value="entry-level">1-2 years</option>
+  <option value="mid-level">2-5 years</option>
+  <option value="senior-level">+5 years</option>
+      </select>
+      </label></fieldset>
+      <fieldset>
+ <fieldset>
+  <legend> Select one of the options </legend>
+  <label for="age-check-1">
+    <input type="radio" name="age-check" id="age-check-1" value="18+" />I am OVER 18
+  </label>
+  <label for="age-check-2">
+    <input type="radio" name="age-check" id="age-check-2" value="18-" />I am UNDER 18
+  </label>
+</fieldset>
+
+<fieldset>
+  <legend>Are you a friend of Mike Oniciuc?</legend>
+  <label for="friend-yes">
+    <input type="checkbox" name="yfriend" id="friend-yes" value="yes" />YES
+  </label>
+  <label for="friend-no">
+    <input type="checkbox" name="nfriend" id="friend-no" value="no" />NO, but I would love to!
+  </label>
+</fieldset>
+
+    <textarea value="comments" placeholder="Share your thoughts with us..."></textarea>
+   <input id="submit" type="submit" value="submit" />
+  </form>
+  </body>
+</html>
